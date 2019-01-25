@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: rgba(128, 128, 128, 0.041);
 }
 nav {
   display: flex;
@@ -13,6 +14,7 @@ nav {
 .nav-links {
   display: flex;
   justify-content: space-between;
+  margin-right: 309px;
 }
 
 .nav-links a {
@@ -29,4 +31,16 @@ nav {
 .nav-links a.active {
   border-bottom: 1px solid #1c5d76;
 }
-
+.smurfs{
+  display: flex;
+}
+.smurf{
+  display: inline-block; 
+}
+.smurfCard{
+  border: 1px solid grey;
+  border-radius: 21px;
+  margin: 6px;
+  width: 213px;
+  display:inline-block;
+}

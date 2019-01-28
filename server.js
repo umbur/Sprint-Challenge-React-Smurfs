@@ -67,13 +67,13 @@ server.put('/smurfs/:id', (req, res) => {
   }
 });
 
-server.delete('/smurfs/:id', (req, res) => {
-  const { id } = req.params;
-  const foundSmurf = smurfs.find(smurf => smurf.id == id);
+server.delete('/smurfs/:name', (req, res) => {
+  const { name } = req.params;
+  const foundSmurf = smurfs.find(smurf => smurf.name == id);
 
   if (foundSmurf) {
     const SmurfRemoved = { ...foundSmurf };
-    smurfs = smurfs.filter(smurf => smurf.id != id);
+    smurfs = smurfs.filter(smurf => smurf.id != name);
     res.status(200).json(smurfs);
   } else {
     sendUserError('No smurf by that ID exists in the smurf DB', res);

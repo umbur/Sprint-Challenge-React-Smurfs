@@ -43,4 +43,24 @@ nav {
   margin: 6px;
   width: 213px;
   display:inline-block;
+  padding-top: 16px;
 }
+.smurfCard strong{
+  margin-left: -120px;
+}
+.smurfCard p{
+  margin-top: -18px;
+}
+.height{
+  margin-left: -119px;
+  font-weight: bold;
+}
+.age{
+  margin-left: -136px;
+  font-weight: bold;
+}
+.agep {
+  margin-left: 67px;
+}
+
+
